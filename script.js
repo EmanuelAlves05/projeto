@@ -1,13 +1,15 @@
 function toggleMode() {
-  const html = document.documentElement
+    document.documentElement.classList.toggle("light")
 
-  if(html.classList.contains("light")) {
-    html.classList.remove("light")
-  }
-  else {
-    html.classList.add("light")
-  }
+    if (document.documentElement.classList.contains("light")) {
+        localStorage.setItem("theme", "light")
+    } else {
+        localStorage.setItem("theme", "dark")
+    }
 }
 
-  
+const theme = localStorage.getItem("theme")
 
+if (theme === "dark") {
+    document.documentElement.classList.remove("light")
+}

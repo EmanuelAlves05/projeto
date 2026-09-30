@@ -152,18 +152,89 @@ footer {
   }
 }
 @keyframes slide-in {
-  from{
+  from {
     left: 0;
   }
-  to{
+  to {
     left: 50%;
   }
 }
 @keyframes slide-back {
-  from{
+  from {
     left: 50%;
   }
-  to{
+  to {
     left: 0;
   }
+}
+.conteudo-pagina {
+  padding: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.conteudo-pagina h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.conteudo-pagina p {
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.voltar {
+  display: inline-block;
+
+  margin-bottom: 24px;
+  padding: 12px 18px;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  transition: 0.3s ease;
+}
+
+.voltar:hover {
+  background: var(--highlight-color);
+  border-color: var(--text-color);
+  transform: translateX(-5px);
+}
+
+.tecnologias {
+  display: grid;
+  gap: 16px;
+}
+
+.tecnologia {
+  padding: 18px;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  text-align: center;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.tecnologia h2 {
+  margin-bottom: 8px;
+}
+
+.tecnologia p {
+  margin-bottom: 0;
 }
